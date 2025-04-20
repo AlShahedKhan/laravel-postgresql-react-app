@@ -30,7 +30,8 @@ const MultiverseCreate: React.FC<MultiverseProps> = ({ multiverse }) => {
         e.preventDefault();
         form.post('/multiverse', {
             onSuccess: () => {
-                form.reset();
+                // form.reset();
+                window.location.href = '/multiverse';
             }
         });
     };
